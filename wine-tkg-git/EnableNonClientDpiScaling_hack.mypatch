@@ -1,0 +1,15 @@
+diff --git a/dlls/user32/sysparams.c b/dlls/user32/sysparams.c
+index 8b2b338..c8eb2fe 100644
+--- a/dlls/user32/sysparams.c
++++ b/dlls/user32/sysparams.c
+@@ -3679,8 +3679,8 @@ BOOL WINAPI IsProcessDPIAware(void)
+ BOOL WINAPI EnableNonClientDpiScaling( HWND hwnd )
+ {
+     FIXME("(%p): stub\n", hwnd);
+-    SetLastError( ERROR_CALL_NOT_IMPLEMENTED );
+-    return FALSE;
++    //SetLastError( ERROR_CALL_NOT_IMPLEMENTED );
++    return TRUE;
+ }
+ 
+ /***********************************************************************
